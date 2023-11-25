@@ -16,8 +16,8 @@ Ensure the following prerequisites are in place before proceeding:
 ### 1. Configure BIG-IP with Two Virtual Servers
 
 #### a. API Application (SSL Offloading)
-- Configure the first virtual server for the API application.
-- Implement SSL offloading for enhanced security.
+- Configure the first virtual server for the API application (In my example, it is named /Common/api-gw)
+- Implement SSL offloading, attach http profile if there isn't so we can use the iRule.
 
 #### b. Internal VS for Encrypted HSL
 - Set up the second virtual server for internal communication.
@@ -25,7 +25,7 @@ Ensure the following prerequisites are in place before proceeding:
 
 ### 2. Attach iRule to API Application VS
 
-- Enhance data collection by attaching an iRule to the API Application VS.
+- Attach the iRule **sidebandLogger.tcl** to the API Application VS 
 - Configure the iRule to capture HTTP request and response data and forward it to the apilogger container.
 
 ### 3. Set Up Apilogger
