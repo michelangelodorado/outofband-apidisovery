@@ -36,12 +36,13 @@ Ensure the following prerequisites are in place before proceeding:
 
 #### b. Modify apilogger.js
 - Customize the apilogger.js file by setting the FQDN to match the configuration in F5 XC.
+- Change **webTargetIP** value, in my example it is set to **external-logger.mikelabs.online**
 
 #### c. Modify viplist.csv
 - Update viplist.csv to synchronize F5 VS (API Application) names with the designated FQDN in F5 XC.
 In the example:
-/Common/api-gw is the Virtual Server name
-external-logger.mikelabs.online is the FQDN of the HTTP Load Balancer in F5 XC
+**/Common/api-gw** is the Virtual Server name
+**external-logger.mikelabs.online** is the FQDN of the HTTP Load Balancer in F5 XC
 
 ### 4. Configure F5 XC HTTP Load Balancer
 
