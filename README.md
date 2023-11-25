@@ -25,12 +25,12 @@ Ensure the following prerequisites are in place before proceeding:
 ### 2. Attach iRule to API Application VS
 
 - Attach the iRule **sidebandLogger.tcl** to the API Application VS 
-- Configure the iRule to capture HTTP request and response data and forward it to the apilogger container.
+- Configure the iRule to capture HTTP request and response data and forward it to the logger container.
 
 ### 3. Set Up Apilogger
 
 #### a. Prepare Linux Host and Install Docker
-- Set up a Linux host for the logger and install Docker
+- Set up a linux host for the logger and install Docker
 
 #### b. Modify apilogger.js
 - Customize the apilogger.js file by setting the FQDN to match the configuration in F5 XC.
@@ -58,7 +58,7 @@ In the example:
 - Utilize a Python script under logger/testbatch.sh to generate sustained test traffic.
 
 ```bash
-while true; do ./testbatch.sh "mike1@f5.com" "b6e81427-0a29-4d28-bb2a-70df44b66420.access.udf.f5.com" && sleep 10; done
+while true; do ./testbatch.sh "mike1@f5.com" "<original FQDN of the Application>" && sleep 10; done
 ```
 
 - Ensure the traffic volume is substantial for triggering comprehensive API discovery.
