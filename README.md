@@ -30,8 +30,7 @@ Ensure the following prerequisites are in place before proceeding:
 ### 3. Set Up Apilogger
 
 #### a. Prepare Linux Host and Install Docker
-- Set up a Linux host for apilogger.
-- Install Docker on the designated Linux host.
+- Set up a Linux host for the logger and install Docker
 
 #### b. Modify apilogger.js
 - Customize the apilogger.js file by setting the FQDN to match the configuration in F5 XC.
