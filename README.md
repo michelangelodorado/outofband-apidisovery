@@ -55,22 +55,16 @@ In the example:
 
 ### 5. Send Continuous Test Traffic Using Python Script
 
-- Utilize a Python script under logger/testbatch.sh to generate sustained test traffic.
+- On a client test machine, use Python script under logger/testbatch.sh to generate sustained test traffic.
+- Below is a bash command to loop the script every 10 seconds to generate traffic volume that is substantial for triggering API discovery.
 
 ```bash
 while true; do ./testbatch.sh "mike1@f5.com" "<original FQDN of the Application>" && sleep 10; done
 ```
 
-- Ensure the traffic volume is substantial for triggering comprehensive API discovery.
-
 ## Conclusion
-Summarize the configuration steps and confirm the successful establishment of out-of-band F5 Distributed Cloud API Discovery.
 
 ## Additional Guidance
-Include any extra tips, troubleshooting suggestions, or links to supplementary documentation for further assistance.
-
-## Revision History
-Maintain a detailed log of document revisions to track changes over time.
 
 
 
