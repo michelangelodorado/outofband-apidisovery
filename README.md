@@ -5,8 +5,7 @@
 ## Objective
 Guide users through the step-by-step process of configuring out-of-band API discovery using F5 Distributed Cloud (XC) and BIG-IP LTM.
 
-![image](https://github.com/michelangelodorado/outofband-apidisovery/assets/102953584/5d9b7ddb-de85-45b2-a492-7e29df0a0923)
-
+![image](https://github.com/michelangelodorado/outofband-apidisovery/assets/102953584/9349b5f5-b034-414c-b3da-e4d4ddb8b2f2)
 
 ## Prerequisites
 Ensure the following prerequisites are in place before proceeding:
