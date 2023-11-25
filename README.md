@@ -53,7 +53,12 @@ Ensure the following prerequisites are in place before proceeding:
 
 ### 5. Send Continuous Test Traffic Using Python Script
 
-- Develop or utilize a Python script to generate sustained test traffic.
+- Utilize a Python script under logger/testbatch.sh to generate sustained test traffic.
+
+```bash
+while true; do ./testbatch.sh "mike1@f5.com" "b6e81427-0a29-4d28-bb2a-70df44b66420.access.udf.f5.com" && sleep 10; done
+```
+
 - Ensure the traffic volume is substantial for triggering comprehensive API discovery.
 
 ## Conclusion
@@ -68,6 +73,4 @@ Maintain a detailed log of document revisions to track changes over time.
 
 
 
-```bash
-while true; do ./testbatch.sh "mike1@f5.com" "b6e81427-0a29-4d28-bb2a-70df44b66420.access.udf.f5.com" && sleep 10; done
-```
+
