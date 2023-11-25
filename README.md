@@ -20,8 +20,7 @@ Ensure the following prerequisites are in place before proceeding:
 - Implement SSL offloading, attach http profile if there isn't so we can use the iRule.
 
 #### b. Internal VS for Encrypted HSL
-- Set up the second virtual server for internal communication.
-- Configure it to use encrypted HSL for data transmission.
+- Set up the second virtual server to covert unencrypted HSL to use TLS (https://techdocs.f5.com/en-us/bigip-15-0-0/external-monitoring-of-big-ip-systems-implementations/setting-up-secure-remote-logging.html)
 
 ### 2. Attach iRule to API Application VS
 
